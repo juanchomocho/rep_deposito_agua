@@ -40,4 +40,26 @@ public class DepositoDeAgua {
             vaciando = true;
         }
     }
+    
+    public void imprimirEstado() {
+        String abierto;
+        if (vaciando) {
+            abierto = "abierto";
+        }
+        else {
+            abierto = "cerrado";
+        }
+        System.out.println("El nombre de este depósito es " + name + " | El depósito contiene " + litrosAgua + " litros de agua" + " | El grifo está " + abierto);
+    }
+    
+    public String getEstado() {
+        String abierto;
+        if (vaciando) {
+            abierto = "abierto";
+        }
+        else {
+            abierto = "cerrado";
+        }
+        return ("Nombre: " + name + " | Litros de gasolina: " + litrosAgua + " | Grifo: " +  abierto);
+    }
 }
